@@ -1,113 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>電通　太郎のホームページ</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaku HIROSE</title>
+    <link href="styles.css" media="all" rel="stylesheet" type="text/css" />
+
 </head>
-<style>
-    h1 {
-        color: pink;
-        background-color: #4abdac;
-        padding: 32px;
-        text-shadow: 2px 2px 4px black;
-        font-size: 64px;
-        text-align: center;
-    }
 
-    h2 {
-        color: darkgreen;
-        border-left-width: 8px;
-        border-left-style: solid;
-        border-left-color: #4abdac;
-        padding-left: 8px;
-        margin-top: 32px;
-    }
-
-    img {
-        border-width: 4px;
-        border-style: solid;
-        border-color: gray;
-        width: 480px;
-        height: 270px;
-        border-radius: 20px;
-    }
-
-    main {
-        margin: 16px;
-    }
-
-    .cycling {
-        color: blue;
-    }
-
-    .violine {
-        color: orange;
-    }
-
-    .pictures {
-        background-color: black;
-    }
-
-    .cycling,
-    .violine {
-        font-size: 20px;
-    }
-
-    .food li {
-        color: green;
-    }
-</style>
-<script>
-    function changeTitle(){
-        const title = document.getElementById('title');
-        title.textContent = '電通太郎の自己紹介'
-    }
-</script>
 <body>
-    <h1 id="title">電通　太郎のホームページ</h1>
-    <main>
-        <h2>人物紹介</h2>
-        <p>
-            こんにちは。電通高校1年生の電通　太郎です。趣味は<span class="cycling">サイクリング</span>と<span
-                class="violine">バイオリン</span>です。犬が好きです！よろしくお願いします！
-        </p>
-        <h2>サイト紹介</h2>
-        <p>電気通信大学プログラミング教室のwebサイトは<a href="https://www.uec-programming.com">こちら</a>！！</p>
-        <h2>好きな食べ物</h2>
-        <ul>
-            <li>納豆</li>
-            <li>バナナ</li>
-            <li>海老</li>
-        </ul>
-        <h2>おすすめ小説ランキング</h2>
-        <ol>
-            <li>ハリーポッター</li>
-            <li>ナルニア国物語</li>
-            <li>ニルスの不思議な旅</li>
-        </ol>
-        <h2>写真</h2>
-        <div class="pictures">
-            <img src="https://i.imgur.com/HIxTKbe.jpg" alt="東京タワーから見た夜景" />
-            <img src="https://i.imgur.com/pAQ7QKc.jpg" alt="高尾山から見た朝焼け" />
-        </div>
-        <h2>お問い合わせ</h2>
-        <form action="http://soasa.starfree.jp/form.php">
-            名前: <input type="text" name="name" placeholder="電通太郎" />
-            <br />
-            <input type="radio" name="animal" value="dog" />犬派
-            <input type="radio" name="animal" value="cat" />猫派
-            <input type="radio" name="animal" value="other" />その他
-            <br />
-            <input type="checkbox" name="music" />楽器経験がある
-            <br />
-            <textarea name="comment"></textarea>
-            <br />
-            <input type="submit" value="送信する" />
-        </form>
-        <h2>カスタマイズ</h2>
-        <button onclick="changeTitle()">タイトル変更</button>
-    </main>
+    <div class="wrapper">
+
+        <!-- header -->
+        <header class="header ">
+            <div class="inner">
+                <h1 class="header-logo">
+                    <div>Gaku HIROSE</div>
+                </h1>
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-item"><a href="#About">About</a></li>
+                        <li class="header-nav-item"><a href="#Profile">Profile</a></li>
+                        <li class="header-nav-item"><a href="#Research">Research</a></li>
+                        <li class="header-nav-item"><a href="#Access">Access</a></li>
+                        <li class="header-nav-item"><a href="#Contact">Link</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <main class="content">
+
+            <!-- main-visual -->
+            <div class="main-visual">
+                <div class="main-visual-inner">
+                    <p>
+                        <img src="img/top.jpeg" alt="">
+                    </p>
+  
+                </div>
+            </div>
+            <!-- /main-visual -->
+
+            <!-- About -->
+            <section class="about section" id="About">
+                <div class="inner">
+                    <h2 class="title">ABOUT</h2>
+                    <div class="profile">
+                        <p class="profile-img">
+                            <img src="img/profile.jpeg" alt="">
+                        </p>
+                        <div class="profile-body">
+                            <p>
+                                電気通信大学情報理工学研究科情報学専攻柏原研究室所属
+                            </p>
+                            <p>
+                                ギター、音楽、服、ガジェット、スマブラが好きです。多趣味です。友達になりましょう。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /About -->
+
+            <!-- Profile -->
+            <section class="contact section" id="Profile">
+                <div class="inner">
+                    <h2 class="title">Profile</h2>
+                    <p class="lead">
+                        2021年3月　新潟大学工学部知能情報システムプログラム卒業
+                    </p>
+                    <p class="lead">
+                        2021年4月　電気通信学情報理工学研究科入学
+                    </p>
+                </div>
+            </section>
+            <!-- /Profile -->
+
+            <!-- Research -->
+            <section class="contact section" id="Research">
+                <div class="inner">
+                    <h2 class="title">Research</h2>
+                    <p class="lead">
+                        情報技術を用いて人間の学習の支援をする研究をしています。
+                    </p>
+                    <p class="lead">
+                        大学の学部時代にしていた塾のアルバイトで、既存の学習形態に効率の悪さを感じました。
+                    </p>
+                    <p class="lead">
+                        なんとか出来るのではないだろうかと調べるうちに、学習工学という研究分野について知りました。
+                    </p>
+                    <p class="lead">
+                        それぞれ学習状況が異なる相手に対して、自分の学習状況にフィットした学習の提供を目指したいです。
+                    </p>
+                </div>
+            </section>
+            <!-- /Research -->
+
+            <!-- Access -->
+            <section class="contact section" id="Access">
+                <div class="inner">
+                    <h2 class="title">Access</h2>
+                    <p class="lead">
+                        電気通信大学 西3号館 柏原研究室
+                    </p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507.6111013289589!2d139.54075254459156!3d35.657277268705286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f011ab2ade29%3A0xdf78b2a20023ed93!2z44CSMTgyLTAwMzMg5p2x5Lqs6YO96Kq_5biD5biC5a-M5aOr6KaL55S677yS5LiB55uuIOilvzPlj7fppKg!5e0!3m2!1sja!2sjp!4v1620936295283!5m2!1sja!2sjp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="contact-list">
+                    <a class="contact-item" href="https://wlgate.inf.uec.ac.jp/" target="_blank"
+                        rel="noopener">柏原研究室ホームページ</a>
+                </div>
+            </section>
+            <!-- /Access -->
+
+            <!-- Contact -->
+            <section class="contact section" id="Contact">
+                <div class="inner">
+                    <h2 class="title">Contact</h2>
+                    <p class="lead">
+                        お問い合わせは、<br class="sp-only">SNSかメールにてお願いいたします。
+                    </p>
+                    <div class="contact-list">
+                        <a class="contact-item" href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+                        <a class="contact-item" href="https://www.instagram.com/" target="_blank"
+                            rel="noopener">Instagram</a>
+                        <span class="contact-item">gaku.hirose@uec.ac.jp</span>
+                    </div>
+                </div>
+            </section>
+            <!-- /Contact -->
+
+            <div class="page-top" id="js-page-top">
+                <span class="material-icons-outlined">TOP</span>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="copyright">&copy;Gaku HIROSE</div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript' src="scripts.js"></script>
 </body>
 
 </html>
